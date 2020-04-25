@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    background: url("../images/helena-lopes-PGnqT0rXWLs-unsplash.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.jumbotron {
+    background:none;
+}
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color:rgb(245, 240, 240);
+    background-color:rgba(0, 0, 0, 0.7);
+    font-family: 'Viga', sans-serif;
+    }
+.btn-lg {
+    background-color: rgb(245, 240, 240);
+    color: rgb(249, 205, 75);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    }
