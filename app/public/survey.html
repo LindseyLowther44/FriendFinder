@@ -170,6 +170,7 @@
                     </div>
                   </footer>
                 </div>
+                <!-- Modal -->
                 <div id="resultsModal" class="modal" role="dialog">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -181,8 +182,8 @@
                       </div>
             
                       <div class="modal-body">
-                        <h2 id="Mname"></h2>
-                        <img id="Mimg" src="#" alt="Placeholder image">
+                        <h2 id="matchName"></h2>
+                        <img id="matchImg" src="#" height="auto" width="300px" alt="Placeholder image">
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">
@@ -223,10 +224,11 @@
                       };
                       var currentURL = window.location.origin;
                       $.post(currentURL + "/api/friends", userData, function(data){
-                        $("#match-name").text(userData.name);
-                        $("#match-img").attr("src", userData.photo);
+                        $("#matchName").text(userData.name);
+                        $("#matchImg").attr("src", userData.photo);
 
                         $("#resultsModal").modal("toggle");
+                        console.log(currentURL);
                       });
 
                     } else {

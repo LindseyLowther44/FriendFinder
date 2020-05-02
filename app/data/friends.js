@@ -1,4 +1,4 @@
-var friendsList =[
+var friends =[
     {
         name: "Janet Pinkerton",
         photo: "https://images.unsplash.com/photo-1509955252650-8f558c2b8735?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80",
@@ -36,4 +36,4 @@ var friendsList =[
     }
 ];
 
-module.exports = friendsList;
+module.exports = friends;
